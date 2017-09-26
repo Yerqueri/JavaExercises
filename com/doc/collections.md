@@ -1,6 +1,6 @@
-#Basics of collection
+# Basics of collection
 
-##The List Interface
+## The List Interface
 
 The **List** interface extends **Collection** and declares the behavior of a collection that stores
 a sequence of elements. Elements can be inserted or accessed by their position in the list,
@@ -33,9 +33,6 @@ One way to sort a list is with the **sort( )** method defined by List.
 
 | Method        | Description   |
 | ------------- |:-------------:| 
-|void add(int index, E obj)|Inserts obj into the invoking list at the index passed
-in index. Any preexisting elements at or beyond the
-point of insertion are shifted up. Thus, no elements
-are overwritten.|
+|void add(int index, E obj)|Inserts obj into the invoking list at the index passed in index. Any preexisting elements at or beyond the point of insertion are shifted up. Thus, no elements are overwritten.|
 
 
