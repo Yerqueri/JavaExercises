@@ -43,3 +43,13 @@ One way to sort a list is with the **sort( )** method defined by List.
 |E remove(int index)|Removes the element at position index from the invoking list and returns the deleted element. The resulting list is compacted. That is, the indexes of subsequent elements are decremented by one.|
 |default void replaceAll(UnaryOperator<E> opToApply)|Updates each element in the list with the value obtained from the opToApply function. (Added by JDK 8.)|
 |E set(int index, E obj)|Assigns obj to the location specified by index within the invoking list. Returns the old value.|
+|default void replaceAll(UnaryOperator opToApply)|Updates each element in the list with the value obtained from the opToApply function. (Added by JDK 8.)|
+|E set(int index, E obj)|Assigns obj to the location specified by index within the invoking list. Returns the old value.|
+
+## The Set Interface
+
+The Set interface defines a set. It extends Collection and specifies the behavior of a
+collection that does not allow duplicate elements. Therefore, the **add( )** method returns **false** if an attempt is made to add duplicate elements to a set. It does not specify any
+additional methods of its own. Set is a generic interface that has this declaration:
+interface Set<E>
+Here, E specifies the type of objects that the set will hold.
