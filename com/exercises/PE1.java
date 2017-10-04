@@ -22,32 +22,32 @@ public class PE1 {
 		
 		boolean isAPalindrome = false;
 		
-		long a = in.nextInt();
-		String s = Long.toString(a);
-		StringBuffer buff = new StringBuffer(s);
-		if(buff.reverse().toString().equals(s)) {
+		long input = in.nextInt();
+		String inString = Long.toString(input);
+		StringBuffer buff = new StringBuffer(inString);
+		if(buff.reverse().toString().equals(inString)) {
 			isAPalindrome=true;
 		}
 		
-		if(a>20 && a<=30 && a%2==0) {
+		if(input>20 && input<=30 && input%2==0) {
 			System.out.println("jerry");
 		}
-		if(a>20 && a<=30 && a%2!=0) {
+		if(input>20 && input<=30 && input%2!=0) {
 			System.out.println("tom");
 		}
 		
 		long sum = 0;
 		
 		if(isAPalindrome) {
-			sum=findSum(s);
+			sum=findSum(inString);
 			if(sum%2==0 && sum >25)
-				System.out.println(s+" is palindrome and the sum of even numbers is greater than 25");
+				System.out.println(inString+" is palindrome and the sum of even numbers is greater than 25");
 			
 			if(sum%2==0 && sum<25)
-				System.out.println(s+" is is palindrome and sum of even numbers is less than 25 ");
+				System.out.println(inString+" is is palindrome and sum of even numbers is less than 25 ");
 		}
 		else {
-			System.out.println(s+" is not palindrome");
+			System.out.println(inString+" is not palindrome");
 		}
 		
 		in.close();

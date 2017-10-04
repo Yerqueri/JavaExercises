@@ -3,6 +3,7 @@ package com.exercises;
 public class PE13 {
 	public static void main(String[] args) {
 		Member member = new Member() {
+			
 		};
 		member.age=22;
 		member.name="Ayush";
